@@ -12,7 +12,6 @@ header{
     padding-bottom: 10px;
     background-color: #CBF0F2;
 }
-
 h1 {
     color: #42A5B3;
     font-family: 'Julius Sans One', sans-serif;
@@ -21,56 +20,6 @@ h1 {
     margin: 0 auto;
     background-color: #CBF0F2;
 }
-
-div {
-    font-family: 'Julius Sans One', sans-serif;
-    font-size: 40px;
-    background-color: #CBF0F2;
-}
-
-#begingame {
-    top: 215px;
-    position: absolute;
-    z-index: 100;
-    padding: 30px 60px;
-    left: 40%;
-    font: white;
-    opacity: 0.6;
-    moz-border-radius: 15px;
-    -webkit-border-radius: 15px;
-}
-
-#gameEnd {
-    display:none;
-    top: 215px;
-    position: absolute;
-    z-index: 100;
-    padding: 30px 60px;
-    left: 35%;
-    font: white;
-    background-color: #EB5963;
-    moz-border-radius: 15px;
-    -webkit-border-radius: 15px;
-
-
-/*    position: relative;
-    top: 0px;
-    margin: 0 auto;
-    height: 100px;
-    width: 90%;
-    z-index: 1;
-    opacity: 1;
-    display:none;*/
-}
-
-.clearfix:after {
-  content: " "; /* Older browser do not support empty content */
-  visibility: hidden;
-  display: block;
-  height: 0;
-  clear: both;
-}
-
 .container {
     text-align: center;
     margin: 0 auto;
@@ -84,9 +33,60 @@ div {
 
 .sqr {
     margin: 0 auto;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 40px;
     width: 300px;
     height:300px;
 }
+input {
+    background-color: #0FA1A8;
+    font-family: 'Julius Sans One', sans-serif;
+    color: #FFFFFF;
+    opacity: 0.6;
+    font-size: 40px;
+    border: none;
+}
+#begingame {
+    top: 218px;
+    position: absolute;
+    z-index: 100;
+    padding: 35px 65px;
+    margin-left: -123px;
+    opacity: 0.6;
+    border-radius: 10px;
+    moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+}
+
+#gameEnd {
+    display:none;
+    top: 220px;
+    position: absolute;
+    z-index: 100;
+    padding: 30px 60px;
+    margin-left: -40px;
+    background-color: #EB5963;
+    border-radius: 10px;
+    moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    opacity: .8;
+}
+#newgame {
+    margin:20px auto 50px auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.clearfix:after {
+  content: " "; /* Older browser do not support empty content */
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
     
 .column {
     /*display: inline-block;*/
@@ -167,29 +167,10 @@ div {
     background-color: #CBF0F2;
     font-size: 80px;
 }
-#newgame {
-    margin:0 auto;
-    padding-top: 20px;
-    text-align: center;
-    width: 130px;
-}
 
 footer {
     width: 100%;
     height: 40px;
     bottom: 0;
     position: fixed;
-}
-
-input {
-    background-color: #0FA1A8;
-    font-family: 'Julius Sans One', sans-serif;
-    font: 20px;
-    color: #FFFFFF;
-    margin: 5px;
-    padding: 10px;
-    opacity: 0.6;
-    moz-border-radius: 15px;
-    -webkit-border-radius: 15px;
-
 }
