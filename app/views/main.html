@@ -11,26 +11,30 @@
 <header>
 	<h1>tic . tac . toe</h1>
 </header>
-	<div class="container">
+	<div class="container" ng-controller="ticTacCtrl">
 		<div class="sqr">
-			<input type="button" id="begingame" value="start" onclick="startGame()"/>
-			<input type="button" id="gameEnd" value="Play Again?" onclick="playAgain()"/>
-			<!-- <div class="column" onclick="Click()">
-				<div class="sqr" id="c1_r1"></div>
-				<div class="sqr" id="c1_r2"></div>
-				<div class="sqr" id="c1_r3"></div>
+				<input type="button" id="begingame" value="start" onclick="startGame()"/>
+				<input type="button" id="gameEnd" value="Play Again?" onclick="playAgain()"/>
+			<div ng-repeat="column in ticTacToe" style="background-color:red; display: inline-block; width: 80px; height: auto; border: 5px solid black;">
+				<div ng-repeat="cell in column" ng-click="clickSqr($parent.$index, $index)" style="background-color:blue; width:80px; height:80px; border: 5px solid black;">
+					{{$parent.$index + "," + $index}}
+				<!-- <div class="column" onclick="Click()">
+					<div class="sqr" id="c1_r1"></div>
+					<div class="sqr" id="c1_r2"></div>
+					<div class="sqr" id="c1_r3"></div>
+				</div>
+				<div class="column" onclick="Click()">
+					<div class="sqr" id="c2_r1"></div>
+					<div class="sqr" id="c2_r2"></div>
+					<div class="sqr" id="c2_r3"></div>
+				</div>
+				<div class="column" onclick="Click()">
+					<div class="sqr" id="c3_r1"></div>
+					<div class="sqr" id="c3_r2"></div>
+					<div class="sqr" id="c3_r3"></div>
+				</div> -->
+				</div>
 			</div>
-			<div class="column" onclick="Click()">
-				<div class="sqr" id="c2_r1"></div>
-				<div class="sqr" id="c2_r2"></div>
-				<div class="sqr" id="c2_r3"></div>
-			</div>
-			<div class="column" onclick="Click()">
-				<div class="sqr" id="c3_r1"></div>
-				<div class="sqr" id="c3_r2"></div>
-				<div class="sqr" id="c3_r3"></div>
-			</div> -->
-		</div>
 		<div>
 			<input type="button" id="newgame" value="reset" onclick="reset()"/>
 		</div>
