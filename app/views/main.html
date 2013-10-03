@@ -1,0 +1,44 @@
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+<!--need to delete this when JavaScript is complete <script>
+	function newGameButton () {
+		var btn = document.getElementById('newgame');
+		if(document.getElementById('newgame').onclick)
+			document.reset
+	}
+</script> --> 
+<header>
+	<h1>tic . tac . toe</h1>
+</header>
+	<div class="container">
+		<div class="sqr">
+		<div>
+			<input type="button" id="begingame" value="start" onclick="startGame()"/>
+		</div>
+		<div>
+			<input type="button" id="gameEnd" value="Play Again?" onclick="playAgain()"/>
+		</div>
+			<div class="column" onclick="Click()">
+				<div class="sqr" id="c1_r1"></div>
+				<div class="sqr" id="c1_r2"></div>
+				<div class="sqr" id="c1_r3"></div>
+			</div>
+			<div class="column" onclick="Click()">
+				<div class="sqr" id="c2_r1"></div>
+				<div class="sqr" id="c2_r2"></div>
+				<div class="sqr" id="c2_r3"></div>
+			</div>
+			<div class="column" onclick="Click()">
+				<div class="sqr" id="c3_r1"></div>
+				<div class="sqr" id="c3_r2"></div>
+				<div class="sqr" id="c3_r3"></div>
+			</div>
+		</div>
+		<div>
+			<input type="button" id="newgame" value="reset" onclick="reset()"/>
+		</div>
+	</div>
+<footer>
+	julie made this
+</footer>
